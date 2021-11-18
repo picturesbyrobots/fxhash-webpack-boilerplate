@@ -26,21 +26,22 @@
       //---- /do not edit the following code
     </script>
     <script >
-      let connection = new WebSocket('ws://localhost:8080/ws')
-      connection.onmessage = (msg) => {
-        if(msg.data === 'ok')
-        {
-          let el = document.querySelector('.Artwork_iframe')
-          el && el.setAttribute('src', '/index.html')
+      // you can talk to webpack dev server like si
+      // let connection = new WebSocket('ws://localhost:8080/ws')
+      // connection.onmessage = (msg) => {
+      //   if(msg.data === 'ok')
+      //   {
+      //     let el = document.querySelector('.Artwork_iframe')
+      //     el && el.setAttribute('src', '/index.html')
 
-        }
+      //   }
 
-      }
+      // }
 
     </script>
 
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sandbox.css">
 
     <!-- if you need to import js scripts do it here -->
   </head>

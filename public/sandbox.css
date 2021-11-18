@@ -1,0 +1,59 @@
+
+.section {
+  box-sizing: border-box;
+}
+div {
+  display: block;
+}
+.Layout_main {
+  min-height: calc(100vh - 140px - 50px);
+  display : block;
+}
+.Layout_padding-big {
+  padding-left: 80px;
+  padding-right: 80px;
+
+}
+
+.Sandbox_container
+{
+  display: flex;
+  flex-direction: row;
+  grid-gap:50px;
+  align-items: center;
+  width: 100%;
+}
+.Sandbox_artwork
+{
+  grid-gap: 9px;
+  gap:8px;
+  align-items: flex-end;
+  width: 100%;
+}
+.Sandbox_iframe-container
+{
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.Sandbox_iframe-wrapper
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.Artwork_container
+{
+  width: 100%;
+  height: 100%;
+  border: 20px solid black;
+}
+.Artwork_iframe {
+  width:100%;
+  height: 100%;
+  border: none;
+}
