@@ -40,6 +40,10 @@ $ npm start
 
 This last command will start a local http server with [live reloading](https://webpack.js.org/configuration/dev-server/#devserverlivereload) enabled so that you can iterate faster on your projects. Open [http://localhost:8080](http://localhost:8080) to see your project in the browser.
 
+If you would like to preview how your project will look in the sandbox environment a minimal preview is available at [http://localhost:8080/sandbox.html](http://localhost:8080/sandbox.html)
+
+If you would like to test what multple projects look like(debugging iterations and the like) checkout out [http://localhost:8080/preview.html](http://localhost:8080/preview.html)
+
 ## Build
 
 ```sh
