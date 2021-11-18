@@ -21,7 +21,3 @@ console.log(fxrand()) // deterministic PRNG function, use it instead of Math.ran
 // }
 
 // this code writes the values to the DOM as an example
-const container = document.createElement("div")
-container.innerText = fxrand()
-
-document.body.prepend(container)
