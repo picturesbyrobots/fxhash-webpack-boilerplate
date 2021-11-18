@@ -25,24 +25,60 @@
       var fxrand = sfc32(...hashes)
       //---- /do not edit the following code
     </script>
+    <script >
+      let connection = new WebSocket('ws://localhost:8080/ws')
+      connection.onmessage = (msg) => {
+        if(msg.data === 'ok')
+        {
+          let el = document.querySelector('.Artwork_iframe')
+          el && el.setAttribute('src', '/index.html')
+
+        }
+
+      }
+
+    </script>
+
 
     <link rel="stylesheet" href="./style.css">
 
     <!-- if you need to import js scripts do it here -->
   </head>
   <body>
+    <main class ="Layout_main" >
+      <section>
+        <main class = "Layout_padding-big">
+          <div>
+            <section class="Sandbox_container">
+              <div class="Sandbox_artwork" >
+                <div class="Sandbox_iframe-container">
+                  <div class="Sandbox_iframe-wrapper">
+                    <div class="Artwork_container">
+                      <iframe sandbox="allow-scripts allow-same-origin" class="Artwork_iframe" src="index.html"/>
 
-    <!-- WEBPACK will inject the bundle.js here -->
-    <div class="sandbox_artwork">
-      <div class="canvas_container">
-        <div class="canvas_wrapper">
-        </div>
+                    </div>
 
-        </div>
+                  </div>
 
-      </div>
+                </div>
 
-    </div>
-    
+
+              </div>
+
+
+
+              </div>
+            </section>
+
+
+          </div>
+
+        </main>
+
+
+      </section>
+
+    </main>
+
   </body>
 </html>

@@ -1,8 +1,12 @@
 const path = require("path")
 const webpack = require("webpack")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
-
+const jsEntryFiles = {
+  index : "./src/index.js",
+  sandbox : "./src/sandbox"
+  }
 module.exports = {
+  
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "../dist"),

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project Batch Preview</title>
+        <link rel="stylesheet" href="./preview.css">
+        <script>
+
+
+
+
+            function create_iframe()
+            {
+
+                for(var i = 0; i < 30; i++)
+                {
+                    let el = document.querySelector('.flex-container')
+                    let iframe_wrapper = document.createElement("div")
+                    iframe_wrapper.classList.add('flex-item')
+                    iframe_wrapper.classList.add('Artwork_container')
+                    el.appendChild(iframe_wrapper)
+                    let iframe = document.createElement('iframe')
+                    iframe.setAttribute('sandbox','allow-scripts allow-same-origin')
+                    iframe.setAttribute('src', './index.html')
+                    iframe.classList.add('Artwork_iframe')
+                    iframe_wrapper.appendChild(iframe)
+                }
+
+            }
+            window.onload = function(e) {
+                create_iframe()
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="flex-container">
+        
+        </div>
+
+    </body>
+
+</html>
