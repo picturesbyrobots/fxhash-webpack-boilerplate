@@ -15,7 +15,7 @@ function setup()
         [0,255,0],
         [0,0,255]
     ]
-    createCanvas(window.innerWidth - 10, window.innerHeight -10)
+    createCanvas(window.innerWidth , window.innerHeight)
     
 
     let c_data= colors[Math.floor(randRange(0,colors.length))]

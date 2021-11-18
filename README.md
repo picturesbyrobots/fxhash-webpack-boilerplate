@@ -44,6 +44,9 @@ If you would like to preview how your project will look in the sandbox environme
 
 If you would like to test what multple projects look like(debugging iterations and the like) checkout out [http://localhost:8080/preview.html](http://localhost:8080/preview.html)
 
+### A NOTE ABOUT PREVIEW.HTML
+The preview uses a for loop to generate a series of iframes in a grid. Each one of these iFrames has index.html as a source. If your project is very heavy you could see some FPS tanking. you can reduce the number of iterations in `preview.html` or do something in your scripts to prevent animating if the parent window named preview or something else clever and brilliant. \0/ 
+
 ## Build
 
 ```sh
